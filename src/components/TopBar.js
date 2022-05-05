@@ -8,6 +8,7 @@ import {CgChevronDoubleDown} from 'react-icons/cg';
 const TopBar = () => {
   return (
     <div className='TopBar'>
+      
         <div className='wrapper'>
             <div className='search'>
                 <SearchOutlinedIcon/>
@@ -30,7 +31,13 @@ const TopBar = () => {
                 </div>
              </div>
             </div>
+            
         </div>  
+        
+          
+         
+        
+       
         
     </div>
     

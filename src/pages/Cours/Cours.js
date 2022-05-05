@@ -1,9 +1,19 @@
-import React from 'react'
+import NavBar from '../../components/NavBar';
+import React  from 'react';
+import TopBar from '../../components/TopBar';
 
 
 const Cours = () => {
   return (
-    <div><h1>dffuwifvuwqbuvqwf</h1></div>
+    <div className ='db'>
+    <NavBar/>
+      <div className="dbContainer">
+          <TopBar/>
+          <hr/>
+          
+      </div>
+     
+  </div>
   )
 }
 

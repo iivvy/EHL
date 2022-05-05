@@ -1,9 +1,9 @@
 
 import './Home.css';
-import NavBar from '../../componenets/NavBar';
+import NavBar from '../../components/NavBar';
 import React from 'react';
-import TopBar from '../../componenets/TopBar';
-import Datatable from '../../componenets/datatable/Datatable';
+import TopBar from '../../components/TopBar';
+import Datatable from '../../components/datatable/Datatable';
 
 const Home=()=> {
   return (
@@ -11,7 +11,7 @@ const Home=()=> {
       <NavBar />
       <div className='homeContainer'>
          <TopBar /> 
-      <hr />
+         <hr />
          
          
       </div>

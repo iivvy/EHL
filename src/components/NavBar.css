@@ -1,5 +1,5 @@
 .sidenav{
-    width: 190px;
+    width: 250px;
     background: #0A1F31;
     position:absolute;
     height: 100vh;
@@ -8,8 +8,8 @@
      
   }
   .avatar{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%; 
     /* position: absolute; */
     top: -50px; 
@@ -27,7 +27,7 @@
     display:inline-block;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
-    line-height: 0mm;
+    line-height: 10mm;
     font-weight: semi-bold;
     
   }
