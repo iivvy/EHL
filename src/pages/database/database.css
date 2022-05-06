@@ -8,7 +8,86 @@
 hr{
     height:0;
     border: 0.5px solid lightgray;
-    width :1090px;
+    width :1135px;
    margin-left: 280px;
   
   }
+  h2{
+      font-size: 30px;
+      color: #28445B;
+      margin-left: 280px;
+      margin-top: 13px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      white-space: nowrap;
+    
+  }
+
+  .FilterButton{
+    padding: 2px 5px;
+    border-radius: 8px;
+    background-color: rgb(230, 230, 230);
+    border: 1px solid rgba(230, 230, 230);
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+    color: #9F9999;
+    
+    display: flex;
+    font-size: 16px;
+    
+    font-weight: 500;
+    
+}
+.sortButton{
+    padding: 2px 5px;
+    border-radius: 8px;
+    background-color: rgb(230, 230, 230);
+    border: 1px solid rgba(230, 230, 230);
+    cursor: pointer;
+    height:30px;
+    width: 80px;
+    color: #9F9999;
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    
+    
+    
+    
+    
+}
+.FilterButton svg{
+    
+    margin-right: 5px;
+    vertical-align: middle;
+    margin-top: 2px;
+    
+}
+.sortButton svg{
+    margin-right: 5px;
+    vertical-align: middle;
+    margin-top: 2px;
+    
+}
+.buttons{
+ 
+    vertical-align: middle;
+    margin-left: 700px;
+    display: flex;
+    margin-top: 13px;
+    
+    
+    
+}
+.dbtitle{
+    height: 70px;
+    width: 1300px;
+  
+    display: flex;
+    justify-content: space-between;
+    
+   
+    
+    
+}

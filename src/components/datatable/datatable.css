@@ -1,9 +1,10 @@
 .datatable{
-    height: 625px;
+    height: 610px;
     width:1400px;
     position: fixed;
     padding-left: 280px;
-    padding-top: 50px;
+    padding-top: 20px;
+   
     
     
     
@@ -41,3 +42,10 @@
     border: 1px dotted rgba(220, 20, 60, 0.52);
     cursor: pointer;
 }
+
+  .MuiDataGrid-row:nth-child(even){
+    background-color: FAFAFA;
+  }
+  .MuiDataGrid-row:nth-child(odd){
+    background-color: #E5EFF8;
+  }
