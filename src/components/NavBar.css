@@ -2,9 +2,12 @@
     width: 250px;
     background: #0A1F31;
     position:absolute;
-    height: 100vh;
+    height:100%;
     padding: 0 30px;
     transition: all 1s;
+    position: fixed;
+    
+  
      
   }
   .avatar{

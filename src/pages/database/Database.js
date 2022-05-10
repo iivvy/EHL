@@ -7,11 +7,13 @@ import {FiFilter} from 'react-icons/fi';
 import {TiArrowUnsorted} from 'react-icons/ti';
 
 import Navbardb from "../../components/DBNavBar";
+import Home from "../Base/Home";
 
 
 const Database =() => {
     return(
         <div className ='db'>
+            
           {/* <NavBar/> */}
             <div className="dbContainer">
                 {/* <TopBar/>

@@ -3,11 +3,11 @@ import React  from 'react';
 
 import validate from './validateIn'
 import useForm from './useFor';
-import './cours.css'
+import './Formulaire.css'
 
 
 
-const Cours = ({ submitForm }) => {
+const Formulaire = ({ submitForm }) => {
   const { handleChange, handleSubmit, values, errors } = useForm(
     submitForm,
     validate
@@ -124,4 +124,4 @@ const Cours = ({ submitForm }) => {
   );
 };
 
-export default Cours;
+export default Formulaire;

@@ -1,5 +1,6 @@
 
 import React  from 'react';
+import Datatable from '../../components/datatable/Datatable';
 
 
 const staff = () => {
@@ -13,7 +14,7 @@ const staff = () => {
         height: '90vh'
       }}
     >
-      <h1>Staff</h1>
+      <Datatable/>
  
     </div>
   );

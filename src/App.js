@@ -4,29 +4,31 @@ import Form from './pages/Login/Form';
 import { render } from "react-dom";
 import {BrowserRouter,Routes,Route,} from "react-router-dom";
 import Home from './pages/Base/Home';
-
-import Cours from './pages/Cours/Cours';
-import Single from './pages/Cours/Single'
-import New from './pages/Cours/New'
+import Single from './pages/Formulaire/Single'
+import New from './pages/Formulaire/New'
 
 import Database from './pages/database/Database';
 import User from './pages/database/User';
-import staff from './pages/database/staffBd';
-import Interface from './pages/interface_enseignant/Interface';
+
+
+import Interface_etudiant from './pages/interface_etudiant/Interface_etudiant';
+import Formulaire from './pages/Formulaire/Formulaire';
 
 
 function App() {
   return(
     <div className='App'>
-     <Home/> 
+      <Home/>
+     
 
       <BrowserRouter>
       <Routes>
        <Route path="/" >
          <Route index element={<Home/>}/>
+
          <Route path="Login" element={<Form/>}/>
          <Route path="Module">
-            <Route index element={ <Cours/>}/>
+            <Route index element={ <Formulaire/>}/>
             <Route path=":ModuleId" element={<Single/>}/>
             <Route path="new" element={<New/>}/>
          </Route>
@@ -37,7 +39,7 @@ function App() {
          </Route>
         
          <Route path="Interface">
-            <Route index element={<Interface />}/>
+            <Route index element={<Interface_etudiant />}/>
             
             
          </Route>
