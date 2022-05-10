@@ -4,8 +4,7 @@ import Form from './pages/Login/Form';
 import { render } from "react-dom";
 import {BrowserRouter,Routes,Route,} from "react-router-dom";
 import Home from './pages/Base/Home';
-import Single from './pages/Formulaire/Single'
-import New from './pages/Formulaire/New'
+
 
 import Database from './pages/database/Database';
 import User from './pages/database/User';
@@ -13,6 +12,7 @@ import User from './pages/database/User';
 
 import Interface_etudiant from './pages/interface_etudiant/Interface_etudiant';
 import Formulaire from './pages/Formulaire/Formulaire';
+import FormEtudAuto from './pages/Formulaire/FormEtudAuto';
 
 
 function App() {
@@ -29,8 +29,7 @@ function App() {
          <Route path="Login" element={<Form/>}/>
          <Route path="Module">
             <Route index element={ <Formulaire/>}/>
-            <Route path=":ModuleId" element={<Single/>}/>
-            <Route path="new" element={<New/>}/>
+       
          </Route>
          <Route path="Bdd">
             <Route index element={<Database />}/>
@@ -39,7 +38,7 @@ function App() {
          </Route>
         
          <Route path="Interface">
-            <Route index element={<Interface_etudiant />}/>
+            <Route index element={<FormEtudAuto />}/>
             
             
          </Route>
