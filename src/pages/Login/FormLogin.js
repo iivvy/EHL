@@ -3,6 +3,7 @@ import validate from './validateInfo';
 import useForm from './useForm';
 import './Form.css';
 
+
 const FormLogin = ({ submitForm }) => {
   const { handleChange, handleSubmit, values, errors } = useForm(
     submitForm,
@@ -11,6 +12,9 @@ const FormLogin = ({ submitForm }) => {
 
   return (
     <div className='form-content-right'>
+      {/* <div className='logo'>
+        <img src={logo} alt='logo'></img>
+      </div> */}
        
       <div ClassName='image '>
       <img className='form-imge' src='img/background.jpg' alt='spaceship' />
@@ -51,7 +55,9 @@ const FormLogin = ({ submitForm }) => {
         
         </span>
       </form>
-      
+      <div className='logo'>
+        <img className ="logoo" src='/Users/aroua/Documents/GitHub/Projet1CS_Enseignement/src/components/avatar.svg' alt='avatar'></img>
+      </div>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import './App.css';
 import Form from './pages/Login/Form';
 import { render } from "react-dom";
 import {BrowserRouter,Routes,Route,} from "react-router-dom";
-import Home from './pages/Home/Home';
+import Home from './pages/Base/Home';
 
 import Cours from './pages/Cours/Cours';
 import Single from './pages/Cours/Single'
@@ -11,11 +11,15 @@ import New from './pages/Cours/New'
 
 import Database from './pages/database/Database';
 import User from './pages/database/User';
+import staff from './pages/database/staffBd';
+import Interface from './pages/interface_enseignant/Interface';
 
 
 function App() {
   return(
     <div className='App'>
+     <Home/> 
+
       <BrowserRouter>
       <Routes>
        <Route path="/" >
@@ -29,8 +33,14 @@ function App() {
          <Route path="Bdd">
             <Route index element={<Database />}/>
             <Route path="UserId" element={<User/>}/>
+            
          </Route>
         
+         <Route path="Interface">
+            <Route index element={<Interface />}/>
+            
+            
+         </Route>
         
             
       

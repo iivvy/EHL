@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:display=swap');
+
 .db{
     display: flex;
     width: 100%;
@@ -12,13 +14,13 @@ hr{
    margin-left: 280px;
   
   }
-  h2{
-      font-size: 30px;
+h2{
+      font-size: 27px;
       color: #28445B;
       margin-left: 280px;
       margin-top: 13px;
       font-family: 'Poppins', sans-serif;
-      font-weight: 600;
+      font-weight: 500;
       white-space: nowrap;
     
   }
@@ -29,14 +31,16 @@ hr{
     background-color: rgb(230, 230, 230);
     border: 1px solid rgba(230, 230, 230);
     cursor: pointer;
-    height: 30px;
+    height: 26px;
     width: 80px;
     color: #9F9999;
     
     display: flex;
     font-size: 16px;
     
-    font-weight: 500;
+    font-weight: 400;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
     
 }
 .sortButton{
@@ -45,29 +49,33 @@ hr{
     background-color: rgb(230, 230, 230);
     border: 1px solid rgba(230, 230, 230);
     cursor: pointer;
-    height:30px;
+    height:26px;
     width: 80px;
     color: #9F9999;
     display: flex;
     font-size: 16px;
-    font-weight: 500;
+    vertical-align: middle;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    
     
     
     
     
     
 }
+
 .FilterButton svg{
     
     margin-right: 5px;
     vertical-align: middle;
-    margin-top: 2px;
+    /* margin-top: 4px; */
     
 }
 .sortButton svg{
-    margin-right: 5px;
+    margin-right: 4px;
     vertical-align: middle;
-    margin-top: 2px;
+
     
 }
 .buttons{
@@ -76,6 +84,7 @@ hr{
     margin-left: 700px;
     display: flex;
     margin-top: 13px;
+
     
     
     
@@ -90,4 +99,14 @@ hr{
    
     
     
+}
+.empty{
+    width: 4px;
+    height: auto;
+    display: inline-block;
+}
+.dbnavigation {
+   margin-left: 60px;
+   width: 80%;
+   margin-top: -20px;
 }

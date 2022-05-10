@@ -1,7 +1,7 @@
 .datatable{
-    height: 610px;
+    height: 530px;
     width:1400px;
-    position: fixed;
+    /* position: fixed; */
     padding-left: 280px;
     padding-top: 20px;
    
@@ -21,6 +21,7 @@
     border-radius: 50%;
     object-fit: cover;
     margin-right: 20px;
+    
 }
 .cellAction{
     display: flex;
@@ -43,9 +44,10 @@
     cursor: pointer;
 }
 
-  .MuiDataGrid-row:nth-child(even){
-    background-color: FAFAFA;
-  }
   .MuiDataGrid-row:nth-child(odd){
+    background-color: #FAFAFA;
+  }
+  .MuiDataGrid-row:nth-child(even){
     background-color: #E5EFF8;
   }
+ 

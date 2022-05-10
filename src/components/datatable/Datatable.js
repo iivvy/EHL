@@ -23,9 +23,10 @@ const Datatable = () => {
   return (
     <div className='datatable'>
   
-      <DataGrid
+      <DataGrid 
+
       
-      
+       
         rows={userRows}
         columns={userColumns.concat(actionColumn) } 
         
@@ -36,6 +37,7 @@ const Datatable = () => {
         showCellRightBorder={false}
         showColumnRightBorder={false}
         showRowRightBorder={false}
+       
         
         
        

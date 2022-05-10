@@ -39,7 +39,7 @@ export const userColumns = [
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
      
       email: "1snow@gmail.com",
-      age: 35,
+      class:'3cs',
     },
     {
       id: 2,
@@ -47,14 +47,14 @@ export const userColumns = [
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "2snow@gmail.com",
       
-      age: 42,
+      class:'3cs',
     },
     {
       id: 3,
       username: "Lannister",
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "3snow@gmail.com",
-      
+      class:'3cs',
       age: 45,
     },
     {
@@ -62,7 +62,7 @@ export const userColumns = [
       username: "Stark",
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "4snow@gmail.com",
-     
+      class:'2cs',
       age: 16,
     },
     {
@@ -70,6 +70,7 @@ export const userColumns = [
       username: "Targaryen",
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "5snow@gmail.com",
+      class:'1cs',
       
       age: 22,
     },
@@ -78,7 +79,7 @@ export const userColumns = [
       username: "Melisandre",
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "6snow@gmail.com",
-      
+      class:'1cp',
       age: 15,
     },
     {
@@ -86,7 +87,7 @@ export const userColumns = [
       username: "Clifford",
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "7snow@gmail.com",
-      
+      class:'3cs',
       age: 44,
     },
     {
@@ -94,7 +95,7 @@ export const userColumns = [
       username: "Frances",
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "8snow@gmail.com",
-      
+      class:'3cs',
       age: 36,
     },
     {
@@ -102,7 +103,7 @@ export const userColumns = [
       username: "Roxie",
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "snow@gmail.com",
-      
+      class:'1cs',
       age: 65,
     },
     {
@@ -110,7 +111,7 @@ export const userColumns = [
       username: "Roxie",
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "snow@gmail.com",
-      
+      class:'1cs',
       age: 65,
     },
   ];
