@@ -9,18 +9,16 @@ import Home from './pages/Base/Home';
 import Database from './pages/database/Database';
 import User from './pages/database/User';
 
-
-import Interface_etudiant from './pages/interface_etudiant/Interface_etudiant';
 import Formulaire from './pages/Formulaire/Formulaire';
-import FormEtudAuto from './pages/Formulaire/FormEtudAuto';
+import Enseignant from './pages/Formulaire/Enseignant';
+import AutoForm from './pages/Formulaire/AutoForm/AutoForm';
+
 
 
 function App() {
   return(
     <div className='App'>
       <Home/>
-     
-
       <BrowserRouter>
       <Routes>
        <Route path="/" >
@@ -28,7 +26,7 @@ function App() {
 
          <Route path="Login" element={<Form/>}/>
          <Route path="Module">
-            <Route index element={ <Formulaire/>}/>
+            <Route index element={ <AutoForm/>}/>
        
          </Route>
          <Route path="Bdd">
@@ -38,7 +36,7 @@ function App() {
          </Route>
         
          <Route path="Interface">
-            <Route index element={<FormEtudAuto />}/>
+            <Route index element={< Enseignant/>}/>
             
             
          </Route>
