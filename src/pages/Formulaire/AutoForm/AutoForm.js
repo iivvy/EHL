@@ -18,3 +18,8 @@ const AutoForm = () => {
 }
 
 export default AutoForm;
+
+
+
+/* Auto form is created for the admin to add excel lists easily it will be displayed on admin , student and the teachers
+ database pages */
