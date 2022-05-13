@@ -8,6 +8,8 @@ import {HiOutlineDatabase} from 'react-icons/hi'
 import {VscNotebook} from 'react-icons/vsc'
 import {MdLogout} from 'react-icons/md'
 
+import { Link } from 'react-router-dom';
+
 const NavBar = () => {
   return (
     
@@ -22,31 +24,32 @@ const NavBar = () => {
        
        <ul>
             <li>
-                <a href='/'> <AiFillDatabase style={{}}/>Module</a>
+                <a href='/module'> <AiFillDatabase style={{}}/>Module</a>
+            </li>
+        </ul> 
+        
+        <ul>
+        
+            <li>
+   
+              <a href='/bdd/etudiantBd'><HiOutlineDatabase style={{color: 'white'}}/> Base de Donnée</a>
+            </li>
+           
+        </ul> 
+        
+        <ul>
+            <li>
+                <a href='/temps'><AiOutlineSchedule style={{color: 'white'}}/>Emploi du Temps</a>
             </li>
         </ul> 
         <ul>
             <li>
-                
-              <a href='/'><HiOutlineDatabase style={{color: 'white'}}/> Base de Donnée</a>
-              {/* <link to='/pages/database'></link> */}
-              
-              
+                <a href='/chat'> <BsChatDots style={{color: 'white'}} />Messagerie</a>
             </li>
         </ul> 
         <ul>
             <li>
-                <a href='/'><AiOutlineSchedule style={{color: 'white'}}/>Emploi du Temps</a>
-            </li>
-        </ul> 
-        <ul>
-            <li>
-                <a href='/'> <BsChatDots style={{color: 'white'}} />Messagerie</a>
-            </li>
-        </ul> 
-        <ul>
-            <li>
-                <a href='/'> <VscNotebook style={{color: 'white'}} />Evaluation</a>
+                <a href='/evaluation'> <VscNotebook style={{color: 'white'}} />Evaluation</a>
             </li>
         </ul> 
         <MdLogout/>

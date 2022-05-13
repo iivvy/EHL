@@ -7,6 +7,7 @@ import {BsChatDots} from 'react-icons/bs'
 import {HiOutlineDatabase} from 'react-icons/hi'
 import {VscNotebook} from 'react-icons/vsc'
 import {MdLogout} from 'react-icons/md'
+import {GiBookshelf} from 'react-icons/gi'
 
 const SideBarEnseignant = () => {
   return (
@@ -22,13 +23,13 @@ const SideBarEnseignant = () => {
      
      <ul>
           <li>
-              <a href='/'> <AiFillDatabase style={{}}/>Mes Cours</a>
+              <a href='/'> <GiBookshelf style={{}}/>Mes Cours</a>
           </li>
       </ul> 
       <ul>
           <li>
               
-            <a href='/'><HiOutlineDatabase style={{color: 'white'}}/> Emploi du Temps</a>
+            <a href='/'><AiOutlineSchedule style={{color: 'white'}}/> Emploi du Temps</a>
             {/* <link to='/pages/database'></link> */}
             
             

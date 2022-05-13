@@ -1,0 +1,76 @@
+/* Nav:active{
+    color: red;
+    border-bottom: 2px solid #2E6583;
+}
+Nav{
+  background: #fff;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1000px) / 2);
+  z-index: 10;
+  justify-content: flex-start; 
+}
+a{
+    color: #A4A4A4;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  
+  
+ 
+}
+a:active{
+    
+  color: #2E6583;
+         border-bottom: 2px solid #2E6583;
+    
+     
+}
+
+a:checked{
+  color: #2E6583;
+  border-bottom: 2px solid #2E6583;
+}
+
+Bars{
+    display: none;
+  color: #000000;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+}
+
+NavMenu{
+    display: flex;
+  align-items: center;
+  // margin-right: -24px;
+
+  Second Nav
+  margin-right: 24px;
+
+   Third Nav 
+   width: 100vw;
+  white-space: nowrap; 
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  border-bottom: 1px solid #A4A4A4;
+  
+}
+NavMenu:active{
+    
+        color: red;
+        border-bottom: 2px solid #2E6583;
+} */

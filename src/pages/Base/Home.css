@@ -4,14 +4,19 @@
   margin: 0;
   padding: 0;
   color: #E5E5E5;
+  width: fit-content;
+  block-size: fit-content;
 }
 
 .homeContainer{
-   display: block; 
+   display: inline-block; 
   
    flex: 2;
    
    height: 100px;
+   
+
+   
 
   
 }
@@ -25,4 +30,5 @@ hr{
 .home{
   
   height: 100%;
+ 
 }

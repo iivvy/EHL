@@ -10,8 +10,14 @@ import Database from './pages/database/Database';
 import User from './pages/database/User';
 
 import Formulaire from './pages/Formulaire/Formulaire';
-import Enseignant from './pages/Formulaire/Enseignant';
+import Enseignant from './pages/database/enseignantBd';
 import AutoForm from './pages/Formulaire/AutoForm/AutoForm';
+import Module from './pages/module/module';
+import Temps from './pages/temps/temps';
+import Chat from './pages/chat/chat';
+import Etudiant from './pages/database/etudiantBd';
+import Evaluation from './pages/evaluation/evaluation';
+import Staff from './pages/database/staffBd'
 
 
 
@@ -25,21 +31,36 @@ function App() {
          <Route index element={<Home/>}/>
 
          <Route path="Login" element={<Form/>}/>
-         <Route path="Module">
+         <Route path="form">
             <Route index element={ <AutoForm/>}/>
-       
          </Route>
+
          <Route path="Bdd">
             <Route index element={<Database />}/>
-            <Route path="UserId" element={<User/>}/>
+            <Route path="etudiantBd" element={<Etudiant/>}/>
+            <Route path="enseignantBd" element={<Enseignant/>}/>
+            <Route path="staffBd" element={<Staff/>}/>
+         </Route>
+
+         <Route path="module">
+            <Route index element={< Module/>}/>
+         </Route>
+
+         <Route path="temps">
+            <Route index element={< Temps/>}/>
+         </Route>
+
+         <Route path="chat">
+            <Route index element={< Chat/>}/>
+         </Route>
+
+         <Route path="evaluation">
+            <Route index element={< Evaluation/>}/>
+            
             
          </Route>
         
-         <Route path="Interface">
-            <Route index element={< Enseignant/>}/>
-            
-            
-         </Route>
+        
         
             
       
