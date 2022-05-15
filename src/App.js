@@ -55,7 +55,7 @@ function App() {
          </Route>
 
          <Route path="evaluation">
-            <Route index element={< Evaluation/>}/>
+            <Route index element={< AutoForm/>}/>
             
             
          </Route>
