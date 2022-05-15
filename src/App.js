@@ -15,7 +15,7 @@ import Interface from './pages/interface_enseignant/Interface';
 function App() {
   return(
     <div className='App'>
-       <Enseignant />
+       <Mpasse1 />
 
       
 </div>
