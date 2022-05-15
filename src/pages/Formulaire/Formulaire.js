@@ -81,7 +81,7 @@ const Formulaire = ({ submitForm }) => {
           <label className='form-label1'>Groupe</label>
           <input
             className='form-input1'
-            type='text'
+            type='number'
             name='Groupe'
             placeholder='Groupe'
             value={values.Groupe}
@@ -114,7 +114,7 @@ const Formulaire = ({ submitForm }) => {
           {errors.password2 && <p>{errors.password2}</p>}
         </div> */}
         <button className='form-input-btn1' type='submit'>
-          Sign up
+          Submit
         </button>
         {/* <span className='form-input-login1'>
           Already have an account? Login <a href='#'>here</a>
