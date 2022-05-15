@@ -56,7 +56,7 @@ const Enseignant = ({ submitForm }) => {
           <label className='form-label2'>Numéro De Téléphone</label>
           <input
             className='form-input2'
-            type='tel'
+            type='text'
             name='Numéro_De_Téléphone'
             placeholder='Numéro De Téléphone'
             value={values.Numéro_De_Téléphone}
@@ -65,28 +65,28 @@ const Enseignant = ({ submitForm }) => {
           {errors.Numéro_De_Téléphone && <p>{errors.Numéro_De_Téléphone}</p>}
         </div>
         <div className='form-inputs2'>
-          <label className='form-label2'>Promotion</label>
+          <label className='form-label2'>Adresse</label>
           <input
             className='form-input2'
             type='text'
-            name='Promotion'
-            placeholder='Promotion'
-            value={values.Promotion}
+            name='Adresse'
+            placeholder='Adresse'
+            value={values.Adresse}
             onChange={handleChange}
           />
-          {errors.Promotion && <p>{errors.Promotion}</p>}
+          {errors.Adresse && <p>{errors.Adresse}</p>}
         </div>
         <div className='form-inputs2'>
-          <label className='form-label2'>Groupe</label>
+          <label className='form-label2'>Titre</label>
           <input
             className='form-input2'
             type='text'
-            name='Groupe'
-            placeholder='Groupe'
-            value={values.Groupe}
+            name='Titre'
+            placeholder='Titre'
+            value={values.Titre}
             onChange={handleChange}
           />
-          {errors.Groupe && <p>{errors.Groupe}</p>}
+          {errors.Titre && <p>{errors.Titre}</p>}
         </div>
         {/* <div className='form-inputs1'>
           <label className='form-label1'>Password</label>
@@ -113,7 +113,7 @@ const Enseignant = ({ submitForm }) => {
           {errors.password2 && <p>{errors.password2}</p>}
         </div> */}
         <button className='form-input-btn2' type='submit'>
-          Sign up
+          Ajouter
         </button>
         {/* <span className='form-input-login1'>
           Already have an account? Login <a href='#'>here</a>

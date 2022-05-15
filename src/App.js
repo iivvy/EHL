@@ -1,55 +1,23 @@
 import React from 'react';
 import './App.css';
 import Form from './pages/Login/Form';
-import { render } from "react-dom";
+
 import {BrowserRouter,Routes,Route,} from "react-router-dom";
 import Home from './pages/Base/Home';
-
-
+import Mpasse1 from './pages/Mpasse1/Mpasse1'
+import Mpasse from './pages/Mpasse/Mpasse';
 import Database from './pages/database/Database';
 import User from './pages/database/User';
-
-
-import Interface_etudiant from './pages/interface_etudiant/Interface_etudiant';
 import Formulaire from './pages/Formulaire/Formulaire';
-import FormEtudAuto from './pages/Formulaire/FormEtudAuto';
-
+import Enseignant from './pages/Formulaire/Enseignant';
+import Interface from './pages/interface_enseignant/Interface';
 
 function App() {
   return(
     <div className='App'>
-      <Home/>
-     
+       <Enseignant />
 
-      <BrowserRouter>
-      <Routes>
-       <Route path="/" >
-         <Route index element={<Home/>}/>
-
-         <Route path="Login" element={<Form/>}/>
-         <Route path="Module">
-            <Route index element={ <Formulaire/>}/>
-       
-         </Route>
-         <Route path="Bdd">
-            <Route index element={<Database />}/>
-            <Route path="UserId" element={<User/>}/>
-            
-         </Route>
-        
-         <Route path="Interface">
-            <Route index element={<FormEtudAuto />}/>
-            
-            
-         </Route>
-        
-            
       
-
-      </Route>
- 
-  </Routes>
-  </BrowserRouter>
 </div>
   
   )}

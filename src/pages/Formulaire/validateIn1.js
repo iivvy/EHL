@@ -1,4 +1,4 @@
-export default function validateInfo(values) {
+export default function validateInfo1(values) {
     let errors = {};
   
     if (!values.Nom.trim()) {
@@ -12,13 +12,13 @@ export default function validateInfo(values) {
     // }
   
     if (!values.Numéro_De_Téléphone.trim()) {
-      errors.Numéro_De_Téléphone = 'Numéro inscription obligatoire';
+      errors.Numéro_De_Téléphone = 'Numéro de  téléphone obligatoire';
     }
-    if (!values.Promotion.trim()) {
-      errors.Promotion = 'Promotion obligatoire';
+    if (!values.Adresse.trim()) {
+      errors.Adresse = 'Adresse obligatoire';
     }
-    if (!values.Groupe.trim()) {
-      errors.Groupe = 'Groupe obligatoire';
+    if (!values.Titre.trim()) {
+      errors.Titre = 'Titre obligatoire';
     }
   
   
