@@ -7,9 +7,6 @@ import React from 'react'
 import { DataGrid } from '@mui/x-data-grid';
 import { userColumns,userRows } from '../../datatablesource';
 
-
-
-
 const Datatable = () => {
   const actionColumn = [{field:'action',headerName:'Action',width:200,
   renderCell:()=>{
@@ -40,6 +37,9 @@ const Datatable = () => {
         showCellRightBorder={false}
         showColumnRightBorder={false}
         showRowRightBorder={false}
+       
+        
+        
        
         
       />
