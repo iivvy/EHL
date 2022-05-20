@@ -35,8 +35,7 @@ const Mpassef= ({ submitForm }) => {
         </div>
         
          <button className='form-input-btnn' type='submit'>
-          
-          <a href="/mpasse1" style={{textDecoration:'none',color:'white'}}> Envoyer</a>
+          Envoyer
         </button>
         
       </form>
