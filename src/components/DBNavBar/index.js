@@ -1,4 +1,6 @@
-import React from 'react';
+
+import * as React from 'react';
+import * as ReactDom from 'react-dom';
 
 import {
   Nav,
@@ -7,6 +9,36 @@ import {
   NavMenu,
  
 } from './NavbarElements';
+import IconButton from '@mui/material/IconButton';
+import { Button } from '@mui/material';
+import {BsThreeDotsVertical} from 'react-icons/bs';
+class Drop extends React.Component {
+  constructor(){
+    super(...arguments);
+    this.items = [
+      {
+      text:'Ajouter etudiant manuellement'
+    },
+    {
+      text:'Ajouter etudiant automatiquement'
+    }
+  ];
+  }
+  // render (){
+  //   return (
+  //     <div className='drop'>
+  //       <Button>
+  //         <BsThreeDotsVertical 
+  //          items={this.items} iconCss='ddb-icons e-message' 
+  //          cssClass='e-vertical' iconPosition='Top'/>
+  //       </Button>
+        
+  //     </div>
+  //   )
+  // }
+}
+ReactDom.render(<Drop />, document.getElementById('button'));
+
 
 const Navbardb = () => {
   return (
@@ -35,8 +67,17 @@ const Navbardb = () => {
             Administration
           </NavLink>
         
+          <Button 
+          style={{marginLeft:"620px"}} ><BsThreeDotsVertical
+           style={{color:"#A4A4A4",height:"30px",width:"30px",marginRight:"20px"}}
+           items={this.items} iconCss='ddb-icons e-message' 
+           cssClass='e-vertical' iconPosition='Top'
+           /></Button>
+
+        
 
         </NavMenu>
+       
       </Nav>
     </>
   );
