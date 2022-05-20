@@ -10,7 +10,7 @@ import Navbardb from "../../components/DBNavBar";
 import Home from "../Base/Home";
 
 
-const Enseignant = () => {
+const Enseignants = () => {
   return (
     <div className ='db'>
             
@@ -42,4 +42,4 @@ const Enseignant = () => {
   );
 };
 
-export default Enseignant;
+export default Enseignants;
