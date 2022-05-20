@@ -4,7 +4,6 @@ export const userColumns = [
     
     {
       field: "user",
-      
       headerName: "Name",
       width: 230,
       renderCell: (params) => {
