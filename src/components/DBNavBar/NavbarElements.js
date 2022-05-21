@@ -23,6 +23,9 @@ export const Nav = styled.nav`
 
 export const NavLink = styled(Link)`
   color: #A4A4A4;
+  font-family: 'Poppins',sans-serif;
+  font-size: 15px;
+  font-weight: 500;
   display: flex;
   align-items: center;
   text-decoration: none;

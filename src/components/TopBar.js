@@ -5,15 +5,21 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 
 import {CgChevronDoubleDown} from 'react-icons/cg';
+import Datatable from './datatable/Datatable';
+import Search from '../test/Search';
+import { userRows } from '../datatablesource';
+
 const TopBar = () => {
   return (
     <div className='TopBar'>
       
-        <div className='wrapper'>
-            <div className='search'>
+        <div className='wrapper' >
+             <div className='search'>
                 <SearchOutlinedIcon/>
                 <input type='text' placeholder='Search'   ></input>     
-            </div>
+            </div> 
+            
+            
             <div className='items'>
               <div className='item' >
                   <div className='circle'>

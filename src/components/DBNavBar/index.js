@@ -1,5 +1,11 @@
-import React from 'react';
 
+import { Button } from '@mui/material';
+import React from 'react';
+import {BsThreeDotsVertical} from 'react-icons/bs'
+import MenuPopupState from '../formmenu/FormMenu';
+import LongMenu from '../formmenu/FormMenu';
+
+ 
 import {
   Nav,
   NavLink,
@@ -7,6 +13,9 @@ import {
   NavMenu,
  
 } from './NavbarElements';
+
+
+
 
 const Navbardb = () => {
   return (
@@ -34,11 +43,13 @@ const Navbardb = () => {
           <NavLink to='/bdd/staffBd' activeStyle>
             Administration
           </NavLink>
-        
-
+          <MenuPopupState />
+       
         </NavMenu>
       </Nav>
+
     </>
+    
   );
 };
 
