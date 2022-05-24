@@ -24,6 +24,9 @@ import Annee from './pages/module/annee';
 import Event from './pages/event/event';
 import Test from './test/test';
 import Userr from './pages/user/User';
+import Profile from './components/sideProfile/test';
+import Post from './pages/event/Addpost';
+import SinglePost from './pages/event/SinglePost';
 function App() {
   return(
     <div className='App'>
@@ -36,7 +39,7 @@ function App() {
 
          <Route path="Login" element={<Form/>}/>
          <Route path="form">
-            <Route index element={ <Event/>}/>
+            <Route index element={ <AutoForm/>}/>
          </Route>
 
          <Route path="Bdd">
@@ -54,6 +57,8 @@ function App() {
          <Route path="temps">
             <Route index element={< Temps/>}/>
          </Route>
+       
+
 
          <Route path="chat">
             <Route index element={< Chat/>}/>
@@ -73,6 +78,7 @@ function App() {
             <Route index element={<Mpasse1/>}/>
          </Route>
          <Route path="ens">
+         <Route index element={< Enseignant/>}/>
            
          </Route>
         
@@ -83,7 +89,7 @@ function App() {
             <Route index element={<SideWindow/>}/>
          </Route>
          <Route path="test">
-            <Route index element={<Userr/>}/>
+            <Route index element={<SinglePost/>}/>
          </Route>
 
         

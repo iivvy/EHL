@@ -8,11 +8,13 @@ import {TiArrowUnsorted} from 'react-icons/ti';
 
 import Navbardb from "../../components/DBNavBar";
 import Home from "../Base/Home";
+import Profile from "../../components/sideProfile/test";
 
 
 const Database =() => {
     return(
         <div className ='db'>
+            
             
           {/* <NavBar/> */}
             <div className="dbContainer">
@@ -20,23 +22,31 @@ const Database =() => {
                <hr /> */}
                <div className="dbtitle">
                  <h2>Base de Donnée</h2>
+                 
                  <div className="buttons">
+                 
                  <div className="FilterButton">
                      <FiFilter style={{color :'#9F9999'}}/>Filtrer</div>
                      <div className="empty"></div>
                  <div className="sortButton">
                      <TiArrowUnsorted/>Trier</div>
                  </div>
+                 
                
                </div>
+               <Profile/>
                <div className="dbnavigation ">
                    <Navbardb/>
                </div>
 
               
                
+                
+                
                 <Datatable/>
             </div>
+            
+            
            
         </div>
         

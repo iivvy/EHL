@@ -75,7 +75,7 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 export default function MenuPopupState() {
   const redirect = () => {
-    var url = "/temps";
+    var url = "/ens";
     window.open(url);
   };
   const redirect2 = () => {
@@ -94,7 +94,7 @@ export default function MenuPopupState() {
             Dashboard
           </Button> */}
           <IconButton
-          style={{marginLeft:"620px"}}
+          style={{marginLeft:"380px"}}
             aria-label="upload picture"
             variant="contained"
             {...bindTrigger(popupState)}

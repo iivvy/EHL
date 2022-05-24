@@ -67,7 +67,7 @@ export const NavMenu = styled.div`
   /* margin-right: 24px; */
 
   /* Third Nav */
-   width: 100vw;
+   width: 55vw;
   white-space: nowrap; 
 
   @media screen and (max-width: 768px) {

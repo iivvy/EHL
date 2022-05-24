@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
-.card{
+.newYear{
     width: 600px;
     overflow: hidden;
     /* box-shadow: 0px 0px 15px -5px; */
@@ -13,10 +12,16 @@
     margin-bottom: 2.5rem;
     margin-top: 1rem;
     border-radius: 20px;
-  
 }
-.card-title{
-    font-size: 13px;
+.add svg{
+    width: 35px;
+    height:35px;
+    padding: 19px 5px 5px 75px;
+}
+.add p{
+    font-size: 19px;
     font-family: 'Poppins',sans-serif;
+    font-weight: bold;
     text-align: center;
+    margin-top: -40px;
 }

@@ -107,12 +107,18 @@ axios.post(`http://localhost:8080/api/auth/signin`,user)
 .then((response) => 
 {  
     let userresponse = response; 
-    // alert(userresponse.data); 
+    const newdata=JSON.parse(userresponse.data);
+    console.log(userresponse.data); 
+    console.log(newdata);
     // alert("succes login"); 
     if(userresponse){ 
     sessionStorage.setItem('data',JSON.stringify(userresponse)); 
-    this.setState({redirectToReferrer: true}); 
-    } 
+    // this.setState({redirectToReferrer: true}); 
+    // this.setState({selectedUser: JSON.parse(userresponse.data)});
+    // console.log(this.state.selectedUser);
+
+    }
+    
      
 },this) 
 .catch((error) => alert(error)) 
@@ -124,9 +130,15 @@ axios.post(`http://localhost:8080/api/auth/signin`,user)
 
     
  render(){
+  
 
-   if (this.state.redirectToReferrer) {
-     return <Link to='/bdd/etudiantBd' />}
+  //  if (this.state.selectedUser.body.role === "admin"){
+  //    URL='/bdd'
+  //   } else {
+  //     URL="/login";
+  //   }
+  // alert(this.state.selectedUser);
+     
    
   return ( 
     <div className='form-content-right'> 
@@ -163,7 +175,7 @@ axios.post(`http://localhost:8080/api/auth/signin`,user)
           /> 
         </div> 
          <button className='form-input-btn' type='submit'> 
-         <a href='/bdd/etudiantBd'>Login </a>
+         <a href='/Bdd' >Login </a>
           
         </button> 
         <span className='form-input-login'> 

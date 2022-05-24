@@ -32,15 +32,16 @@ h2{
     border: 1px solid rgba(230, 230, 230);
     cursor: pointer;
     height: 26px;
-    width: 80px;
+    width: 70px;
     color: #9F9999;
     
-    display: flex;
+    /* display: flex; */
     font-size: 16px;
     
     font-weight: 400;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
+    margin-left: -300px;
     
 }
 .sortButton{
@@ -50,14 +51,14 @@ h2{
     border: 1px solid rgba(230, 230, 230);
     cursor: pointer;
     height:26px;
-    width: 80px;
+    width: 70px;
     color: #9F9999;
-    display: flex;
+    /* display: flex; */
     font-size: 16px;
     vertical-align: middle;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
-    
+    margin-left: -200px;
     
     
     
@@ -81,7 +82,7 @@ h2{
 .buttons{
  
     vertical-align: middle;
-    margin-left: 700px;
+   
     display: flex;
     margin-top: -8px;
 
@@ -101,7 +102,7 @@ h2{
     
 }
 .empty{
-    width: 4px;
+    width: 10px;
     height: auto;
     display: inline-block;
 }

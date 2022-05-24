@@ -1,0 +1,95 @@
+.contt{
+    height: 100%;
+    width: 310px;
+    background-color: rgba(196, 196, 196, 0.07);
+    border-radius: 15px;
+    float: right;
+    font-family: 'Poppins';
+    margin-top: -80px;
+    margin-bottom: 15px;
+    
+}
+.id{
+    font-size: 18px;
+    font-weight: 600;
+    color: #2E6583;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Poppins';
+}
+.userimg img{
+    height: 100px;
+    width: 100px;
+    border: #2E6583 solid 7px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+}
+.name{
+    color: black;
+    text-align: center;
+}
+.promo{
+    text-align: center;
+    color: #2E6583;
+}
+
+.icon svg{
+    color: #0A1F31;
+    vertical-align: middle;
+    padding: 5px 5px;
+    height: 20px;
+    width: 20px;
+    
+}
+.contact{
+    margin-left: 130px;
+}
+
+.desc h5 , .groupe h6 , .adresseAndLieu h6 ,.dateAndSexe h6 {
+    color: #2E6583;
+    margin-bottom: 0px;
+}
+.desc p, .groupe p , .adresseAndLieu p ,.dateAndSexe p{
+    color: #A0A1A6;
+    font-size: 13px;
+    margin-bottom: -15px;
+}
+.desc p{
+    word-break: break-all;
+}
+
+.dateAndSexe{
+    display: inline-block;
+   
+    padding: 0px 60px 0px 10px;
+    vertical-align: middle;
+   
+    margin-bottom: 0px;
+}
+.adresseAndLieu{
+    display: inline-block;
+    
+    padding: 0px 25px 0px 8px;
+    vertical-align: middle;
+    word-break: break-all;
+   
+}
+.groupe, .desc{
+    padding: 10px;
+}
+
+
+.icon{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(196, 196, 196, 0.32);
+    margin-right: 40px;
+    
+    align-items: center;
+}
