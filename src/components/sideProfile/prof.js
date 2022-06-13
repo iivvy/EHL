@@ -6,15 +6,15 @@ import {BsChatDots} from 'react-icons/bs';
 
 const Prof= () => {
     const {id} = useParams();
-    const [user,setUser] = useState([]);
-    useEffect(()=>{
-        const getUser = async()=>{
-            const response = await fetch(`http://localhost:5000/api/Database/${id}`);
-            const data = await response.json();
-            setUser(data);
-        }
-        getUser();
-    },[]);
+    // const [user,setUser] = useState([]);
+    // useEffect(()=>{
+    //     const getUser = async()=>{
+    //         const response = await fetch(`http://localhost:5000/api/Database/${id}`);
+    //         const data = await response.json();
+    //         setUser(data);
+    //     }
+    //     getUser();
+    // },[]);
     const showprofile =()=>{
         return(
             <div className='contt'>

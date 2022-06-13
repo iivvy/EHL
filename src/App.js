@@ -1,106 +1,89 @@
-import Mpasse from './pages/Mpasse/Mpasse';
-import Database from './pages/database/Database';
-import User from './pages/database/User';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import React from "react";
+import { Route,Routes ,BrowserRouter} from "react-router-dom";
+import Enseignant from "./pages/Admin/database/enseignantBd";
+import Etudiant from "./pages/Admin/database/etudiantBd";
+import AjouterStudent from "./pages/Admin/users/student/AddStudents";
+import FormLogin from "./pages/Login/FormLogin";
 
-import Formulaire from './pages/Formulaire/Formulaire';
+import Promotion from "./pages/Admin/module/promotionPage";
+import Annee from "./pages/Admin/module/annee";
+import StModules from "./pages/Admin/module/StModules";
+import NdModule from "./pages/Admin/module/NdModule";
+import UploadStudent from "./pages/Admin/users/student/uploadExcel/UploadExcel";
+import AjouterEnseignant from "./pages/Admin/users/teacher/AjouterEnseignant";
+import Home from "./pages/Base/Home";
+import Salle from "./pages/Admin/salle/Salle";
+import LoginForm from "./test";
+import Test from "./test";
+import Mpasse from "./pages/Login/Mpasse/Mpasse";
+import Calendar from "./components/calendar/Calendar";
 
-import AutoForm from './pages/Formulaire/AutoForm/AutoForm';
-import Module from './pages/module/module';
-import Temps from './pages/temps/temps';
-import Chat from './pages/chat/chat';
-import Etudiant from './pages/database/etudiantBd';
-import Evaluation from './pages/evaluation/evaluation';
-import Staff from './pages/database/staffBd'
-import Enseignant from './pages/Formulaire/Enseignant';
-import Interface from './pages/interface_enseignant/Interface';
-import Enseignants from './pages/database/enseignantBd';
+import EditStudentProfile from "./pages/Admin/users/student/studentProfile/EditStudentProfile";
+import EditTeacherProfile from "./pages/Admin/users/teacher/editProfile/EditTeacherProfile";
+import Form from "./pages/Login/Form";
 
-import SideWindow from './components/sideWindow/sideWindow';
-import Home from './pages/Base/Home';
-import Form from './pages/Login/Form';
-import Mpasse1 from './pages/Mpasse1/Mpasse1';
-import Annee from './pages/module/annee';
-import Event from './pages/event/event';
-import Test from './test/test';
-import Userr from './pages/user/User';
-import Profile from './components/sideProfile/test';
-import Post from './pages/event/Addpost';
-import SinglePost from './pages/event/SinglePost';
 function App() {
   return(
     <div className='App'>
-       
-      <Home/>
-      <BrowserRouter>
-      <Routes>
-       <Route path="/" >
-         {/* <Route index element={<Home/>}/> */}
-
-         <Route path="Login" element={<Form/>}/>
-         <Route path="form">
-            <Route index element={ <AutoForm/>}/>
-         </Route>
-
-         <Route path="Bdd">
-            <Route index element={<Database />}/>
-            <Route path="etudiantBd" element={<Etudiant/>}/>
-            <Route path="enseignantBd" element={<Enseignants/>}/>
-            <Route path="staffBd" element={<Staff/>}/>
-         </Route>
-
-         <Route path="module">
-            <Route index element={< Module/>}/>
-            <Route path='annee' element={< Annee/>}/>
-         </Route>
-
-         <Route path="temps">
-            <Route index element={< Temps/>}/>
-         </Route>
-       
-
-
-         <Route path="chat">
-            <Route index element={< Chat/>}/>
-         </Route>
-
-         <Route path="evaluation">
-            <Route index element={< Evaluation/>}/>
-            
-            
-         </Route>
-         <Route path="mpasse">
-            <Route index element={<Mpasse/>}/>
-   
-
-         </Route>
-         <Route path="mpasse1">
-            <Route index element={<Mpasse1/>}/>
-         </Route>
-         <Route path="ens">
-         <Route index element={< Enseignant/>}/>
-           
-         </Route>
-        
-         <Route path="formetudiant">
-            <Route index element={<Formulaire/>}/>
-         </Route>
-         <Route path="side">
-            <Route index element={<SideWindow/>}/>
-         </Route>
-         <Route path="test">
-            <Route index element={<SinglePost/>}/>
-         </Route>
-
-        
-        
-            
       
+       <BrowserRouter>
+       <Routes>
+          <Route path='/' element={<Form/>}></Route>
+          <Route path="/Profile" element={<Home/>}/>
+          <Route path="/Settings" element/>
+          <Route path="Etudiant">
+            <Route index  element={<StModules/>}></Route>
 
-      </Route>
+          </Route>
+       
+          {/* Admin routes */}
+          <Route path="admin" >
+           <Route  index element={<StModules/>}/>
+             <Route path="StudentDB" element={<Etudiant/>}/>
+             <Route path="StudentDB/:studentId/edit" element={<EditStudentProfile/>}/>
+             <Route path="TeacherDB" element={<Enseignant/>}/>
+             <Route path="TeacherDB/:teacherId/edit" element={<EditTeacherProfile/>}/>
+             <Route path="TeacherDB/newMan" element={<AjouterEnseignant/>}/>
+             <Route path="TeacherDB/newAuto" element/>
+             <Route path="StudentDB/newMan" element={<AjouterStudent/>}/>
+             <Route path="StudentDB/newAuto" element={<UploadStudent/>}/>
+             <Route path="Promotion" element={<Promotion/>}/>
+             <Route path="Promotion/SchoolYear" element={<Annee/>}/>
+             <Route path="Promotion/SchoolYear/StModule" element={<StModules/>}/>
+             <Route path="Promotion/SchoolYear/NdModule" element={<NdModule/>}/>
+             <Route path="Events" element/>
+             <Route path="Events/:EventsId" element/>
+             <Route path="Events/newEvent" element/>
+             <Route path="TimeTable" element={<Calendar/>}/>
+             <Route path="Chat" element/>
+             <Route path="Salle" element={<Salle/>}/>
+             <Route path='test' element={<Test/>}/>
+             </Route>
+             
+             
+          {/* Teacher Routes */}
+          {/* <Route path='Enseignant'>
+					<Route path="/teacher" element />
+					<Route path="/teacher/courses" element />
+					<Route path="/teacher/schedule" element />
+					<Route path="/teacher/Events" element />
+				</Route>
+          {/* Student Routes */}
+          {/*<Route path='Etudiant'>
+				
+					<Route path="courses" element />
+					<Route path="schedule" element/>
+					<Route path="Events" element />
+				</Route> */}
+        
+          {/* NOTE: Follow the pattern */}
+       
+
+    
  
   </Routes>
   </BrowserRouter>
+
 </div>
   
   )}

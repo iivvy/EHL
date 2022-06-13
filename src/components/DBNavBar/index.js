@@ -34,16 +34,16 @@ const Navbardb = () => {
            {/* <a href ='/bdd' activeStyle style={{textDecoration:'none'}}>
             Administration
           </a> */}
-          <NavLink to='/bdd/etudiantBd' activeStyle>
+          <NavLink to='/admin/StudentDB' activeStyle>
           Etudiant
           </NavLink>
-          <NavLink to='/bdd/enseignantBd' activeStyle>
+          <NavLink to='/admin/TeacherDB' activeStyle>
           Enseignant
           </NavLink>
-          <NavLink to='/bdd/staffBd' activeStyle>
+          {/* <NavLink to='/bdd/staffBd' activeStyle>
             Administration
-          </NavLink>
-          <MenuPopupState />
+          </NavLink> */}
+          <MenuPopupState  />
        
         </NavMenu>
       </Nav>

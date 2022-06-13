@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import Database from '../database/Database';
 
 import './Form.css';
 import FormLogin from './FormLogin';
 import FormSuccess from './FormSuccess';
+
+
+
 
 
 const Form = () => {
@@ -23,7 +25,7 @@ const Form = () => {
         {!isSubmitted ? (
           <FormLogin submitForm={submitForm} />
         ) : (
-          <Database/>
+          <FormSuccess />
         )}
       </div>
     </>

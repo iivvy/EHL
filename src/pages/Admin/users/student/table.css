@@ -1,0 +1,99 @@
+/* .app-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+  } */
+  
+table {
+    /* border-collapse: collapse; */
+    width: 800px;
+}
+  
+/* th,
+td {
+    border: 0.1px solid #ffffff;
+    text-align: left;
+    padding: 4px;
+    font-size: 15px;
+  }
+  
+th {
+    background-color: rgb(117, 201, 250);
+}
+  
+/* td {
+    background-color: rgb(205, 235, 253);
+} */
+  
+/* form {
+    display: flex;
+    gap: 5px;
+}
+  
+form td:last-child {
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+form * {
+    font-size: 28px;
+} */
+/* th:first-child{
+    background-color: aqua;
+}
+
+tr:nth-child(odd){
+    background-color: #FAFAFA;
+}
+tr:nth-child(even){
+    background-color: #E5EFF8;
+}  */
+
+.Student{ 
+  align-items: center;
+  justify-content: center;
+ 
+  flex-direction: column;
+  color: black;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+}
+.form-groups input{
+  height: 35px;
+    width: 300px;
+    border-radius:7px;
+    border: 0.7px solid #5283ad;
+    margin-left: 50px;
+    float: left;
+    background-color: #fdfafa;
+    margin: 10px;
+}
+.form-groups label{
+  height: 20px;
+  width: 200px;
+  margin-top: 15px;
+  margin-left: 10px;
+  text-align: right;
+  float: left;
+}
+
+.info button{
+    background-color: #255f92;
+    color: white;
+    width: 200px;
+    border-radius: 10px;
+    border: 0.2px solid #0A1F31;
+    margin-left: 250PX;background-color: #255f92;
+    color: white;
+    width: 200px;
+    border-radius: 10px;
+    border: 0.2px solid #0A1F31;
+    margin-left: 250PX;
+    height: 40px;
+    margin-bottom: 15px;
+}
+.info input label{
+  flex-direction: row;
+}
+

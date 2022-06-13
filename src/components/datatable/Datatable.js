@@ -3,19 +3,20 @@ import React from 'react'
 import { DataGrid } from '@mui/x-data-grid';
 import { userColumns,userRows } from '../../datatablesource';
 
-import { Button } from '@mui/material';
-
 const Datatable = ({data}) => {
+
+  const redirect = () => {
+    var url = "/ens";
+    window.open(url);
+  };
   const actionColumn = [{field:'action',headerName:'Action',width:200,
-  renderCell:()=>{
+  renderCell:(params)=>{
     return (
       <div className='cellAction'>
-        <div className='viewButton'>
-          
-          View</div>
-        <div className='deleteButton'>
-          
-          Delete</div>
+        <div className='viewButton' >View</div> 
+
+          <div className='deleteButton' onClick={redirect}>Edit</div>
+      
       </div>
     );
   },},
@@ -39,6 +40,8 @@ const Datatable = ({data}) => {
         showCellRightBorder={false}
         showColumnRightBorder={false}
         showRowRightBorder={false}
+        
+        
        
         
         

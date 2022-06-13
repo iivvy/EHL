@@ -1,0 +1,49 @@
+.formS{
+    
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+  align-items: center;
+  justify-content: center;
+  margin-left: 280px;
+  margin-top: -30px;
+
+}
+  
+.viewer{
+    background-color: #f9f8f8;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 15px;
+    color: black;
+    width: 1100px;
+    /* margin-left: 300px; */
+}
+.btn-success{
+    height: 40px;
+    width: 90px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    margin-left: 100px;
+    border-radius: 5px;
+    background-color: rgb(16, 61, 120);
+    border: 0.2ox solid rgb(16, 61, 120);
+    
+    
+ 
+    
+}
+.form-control {
+ 
+
+  color:black;
+ 
+
+}
+tr{
+  word-wrap: break-word;
+}

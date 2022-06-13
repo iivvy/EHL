@@ -1,0 +1,13 @@
+.Dialog{
+    height: 400px;
+    width: 600px;
+
+}
+.field{
+    margin: 20px;
+    width: 400px;
+    
+}
+TextField{
+    width: 600px;
+}

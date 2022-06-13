@@ -1,0 +1,18 @@
+.firstCol{
+    vertical-align: middle;
+    margin-left: 500px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.stbutton{
+    height: 40px;
+    width: 150px;
+    border-radius:10px ;
+    border:0.5px solid rgb(2, 93, 190);
+    background-color: rgb(34, 132, 230);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    float: right;
+}

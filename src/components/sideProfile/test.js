@@ -5,15 +5,18 @@ import'./prof.css';
 
 import {AiOutlineMail} from 'react-icons/ai';
 import {BsChatDots} from 'react-icons/bs';
+import { userRows } from '../../datatablesource';
+import { useParams } from 'react-router-dom';
 
 
 
 const Profile = () => {
+    const {id} = useParams();
   return (
     <div>
         <div className='contt' id='prof'>
                 <div className='id'>
-                    <p>637475465</p>
+                    <p>{userRows.id}</p>
                 </div>
                 <div className='userimg'>
                 <img src='https://static.vecteezy.com/system/resources/previews/002/400/532/original/young-happy-businessman-character-avatar-wearing-business-outfit-isolated-free-vector.jpg' />

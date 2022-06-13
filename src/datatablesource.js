@@ -7,6 +7,7 @@ export const userColumns = [
       
       headerName: "Name",
       width: 210,
+      
       renderCell: (params) => {
         return (
           <div className="cellWithImg">
@@ -27,6 +28,36 @@ export const userColumns = [
       headerName: "Email",
       width: 230,
     },
+    {
+      field: "groupe",
+      headerName: "Groupe",
+      width: 230,
+      hide:true,
+    },
+    {
+      field: "date",
+      headerName: "Date de naissance",
+      width: 230,
+      hide:true,
+    },
+    {
+      field: "lieu",
+      headerName: "Adresse",
+      width: 230,
+      hide:true,
+    },
+    {
+      field: "description",
+      headerName: "À propos",
+      width: 230,
+      hide:true,
+    },
+    {
+      field: "sexe",
+      headerName: "Sexe",
+      width: 230,
+      hide:true,
+    },
   
  
   ];
@@ -37,7 +68,6 @@ export const userColumns = [
       id: 1,
       username: "Snow",
       img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-     
       email: "1snow@gmail.com",
       class:'3cs',
     },

@@ -8,8 +8,8 @@ function Cards  ({title}) {
             <h1>{title}</h1>
         </div>
         <div className='btn'>
-            <button>
-                <a href='/module/annee' style={{textDecoration:"none"}}>View more</a>
+            <button >
+                <a href='/admin/Promotion/SchoolYear' style={{textDecoration:"none"}}>View more</a>
             </button>
         </div>
         

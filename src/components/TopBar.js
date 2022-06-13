@@ -3,11 +3,7 @@ import avatar from './avatar.svg'
 import React from 'react';
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
-
-import {CgChevronDoubleDown} from 'react-icons/cg';
-import Datatable from './datatable/Datatable';
-import Search from '../test/Search';
-import { userRows } from '../datatablesource';
+import MenuListComposition from './formmenu/profileMenu';
 
 const TopBar = () => {
   return (
@@ -27,15 +23,17 @@ const TopBar = () => {
                      </div>
                    <div className='counter'>1</div>
               </div>
-            <div className='userbar' >
-               <img src={avatar} alt='avatar' className='avatarbar'/>
+            <div  >
+               {/* <img src={avatar} alt='avatar' className='avatarbar'/>
                <div className='username'>
                    <h5>Hadjer FERRAR</h5>
                </div>
                 <div className='more'>
                     <CgChevronDoubleDown/>
-                </div>
+                </div> */}
+                <MenuListComposition/>
              </div>
+             
             </div>
             
         </div>  
@@ -46,7 +44,9 @@ const TopBar = () => {
        
         
     </div>
+
     
   )
 }
+
 export default TopBar

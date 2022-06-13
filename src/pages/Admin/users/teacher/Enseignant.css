@@ -1,0 +1,191 @@
+/* .form-container2 {
+    margin: 100px auto;
+    width: 1000px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 10px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  
+  
+  .form-content-left2 {
+    background: linear-gradient(
+      90deg,
+      rgb(39, 176, 255) 0%,
+      rgb(0, 232, 236) 100%
+    );
+    border-radius: 10px 0 0 10px;
+    position: relative;
+  }
+  
+  .form-img2{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .form-img-21 {
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .form-success2{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 80px;
+    color: #fff;
+  }
+  
+  .form-content-right2 {
+    border-radius: 0 10px 10px 0;
+    position: relative;
+    background: linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(17, 17, 17) 100%);
+    margin-top: 300px;
+   
+  }
+  
+  .form2 {
+    position: absolute;
+    top: 50%;
+    left: 59%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form2 h1 {
+    font-size: 1rem;
+    text-align: start;
+    width: 80%;
+    margin-bottom: 1rem;
+    color: rgb(24, 1, 1);
+  }
+  
+  .form-inputs2 {
+    margin-bottom: 0.5rem;
+    width: 30%;
+  }
+  
+  .form-inputs2 p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: #f00e0e;
+  }
+  
+  .form-label2 {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+    color: #0A1F31;
+  }
+  
+  .form-input2 {
+    display: block;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 2px;
+    height: 40px;
+    width: 100%;
+    
+    border-radius: 8px;
+  border: 1px solid #0A1F31 ;
+
+  }
+  
+  .form-input2::placeholder {
+    color: #a4a4a4;
+    font-size: 12px;
+  }
+  
+  .form-input-btn2 {
+    width: 10%;
+    height: 70px;
+    margin-top: 10px;
+    border-radius: 2px;
+    background-color:#0A1F31;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #0A1F31 ;
+  }
+  
+  .form-input-btn2:hover {
+    cursor: pointer;
+    background-color: #195e9a;
+    transition: all 0.4s ease-out;
+  }
+  
+  .form-input-login2 {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: rgb(145, 33, 33);
+    width: 80%;
+    text-align: center;
+  }
+  
+  .form-input-login2 a {
+    text-decoration: none;
+    color: #27cdff;
+    font-weight: 600;
+  }
+   */
+   .Enseignant{
+     align-items: center;
+     color: black;
+     display: flex;
+     justify-content: center;
+     font-family: 'Poppins', sans-serif;
+     
+   }
+  .information input{
+    height: 40px;
+    width: 300px;
+    border-radius:7px;
+    border: 0.7px solid #5283ad;
+    margin-left: 50px;
+    float: left;
+    background-color: #fdfafa;
+    margin: 8px;
+  }
+
+.information button{
+    background-color: #255f92;
+    color: white;
+    width: 200px;
+    border-radius: 10px;
+    border: 0.2px solid #0A1F31;
+    margin-left: 260PX;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+  }
+.information label input{
+  flex-direction: row;
+  
+  
+}
+
+.form-group label{
+  height: 20px;
+  width: 200px;
+  margin-top: 15px;
+  margin-left: 10px;
+  text-align: right;
+  float: left;
+}

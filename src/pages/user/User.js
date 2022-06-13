@@ -7,117 +7,49 @@
 //   Publish,
 // } from "@material-ui/icons";
 import { Link } from "react-router-dom";
+import Home from "../Base/Home";
 import "./user.css";
 
 export default function Userr() {
   return (
     <div className="user">
-      <div className="userTitleContainer">
-        <h1 className="userTitle">Edit User</h1>
-        <Link to="/newUser">
-          <button className="userAddButton">Create</button>
-        </Link>
-      </div>
-      <div className="userContainer">
-        <div className="userShow">
-          <div className="userShowTop">
-            <img
-              src="https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-              alt=""
-              className="userShowImg"
-            />
-            <div className="userShowTopTitle">
-              <span className="userShowUsername">Anna Becker</span>
-              <span className="userShowUserTitle">Software Engineer</span>
-            </div>
+      <Home/>
+      <div className="user__header">
+        <h1>User Profile</h1>
+        </div>
+        <div className="profile-container">
+          <div className="image-container">
+            <img src="https://i1.sndcdn.com/avatars-wX7GkYqEmIrcMzNA-y7cYkQ-t500x500.jpg" alt="profile" />
+            <h1>Olivia rodrigo</h1>
+            <h1 style={{marginTop:"20px",fontSize:"26px",color:"#A4A4A4"}}>1289643456</h1>
           </div>
-          <div className="userShowBottom">
-            <span className="userShowTitle">Account Details</span>
-            <div className="userShowInfo">
-              {/* <PermIdentity className="userShowIcon" /> */}
-              <span className="userShowInfoTitle">annabeck99</span>
+          <div className="profile-info">
+            <div className="info-general">
+              <h2>User Profile</h2>
+              <div className="perso">
+                <h3>Gender: Female</h3>
+              </div>
+              <div className="perso">
+                <h3>Birth date: 11/05/2001</h3>
+              </div>
+              <div className="perso">
+                <h3>Adresse: Ain Temouchent</h3>
+              </div>
             </div>
-            <div className="userShowInfo">
-              {/* <CalendarToday className="userShowIcon" /> */}
-              <span className="userShowInfoTitle">10.12.1999</span>
-            </div>
-            <span className="userShowTitle">Contact Details</span>
-            <div className="userShowInfo">
-              {/* <PhoneAndroid className="userShowIcon" /> */}
-              <span className="userShowInfoTitle">+1 123 456 67</span>
-            </div>
-            <div className="userShowInfo">
-              {/* <MailOutline className="userShowIcon" /> */}
-              <span className="userShowInfoTitle">annabeck99@gmail.com</span>
-            </div>
-            <div className="userShowInfo">
-              {/* <LocationSearching className="userShowIcon" /> */}
-              <span className="userShowInfoTitle">New York | USA</span>
+            <div className="scholar-info">
+              <h3>scholar profile</h3>
+              <div className="scholar">
+                <h3>Promotion: 1CS</h3>
+              </div>
+              <div className="scholar">
+                <h3>Groupe: 05</h3>
+              </div>
+              <div className="scholar">
+                <h3>Type: Etudiant</h3>
+              </div>
             </div>
           </div>
         </div>
-        <div className="userUpdate">
-          <span className="userUpdateTitle">Edit</span>
-          <form className="userUpdateForm">
-            <div className="userUpdateLeft">
-              <div className="userUpdateItem">
-                <label>Username</label>
-                <input
-                  type="text"
-                  placeholder="annabeck99"
-                  className="userUpdateInput"
-                />
-              </div>
-              <div className="userUpdateItem">
-                <label>Full Name</label>
-                <input
-                  type="text"
-                  placeholder="Anna Becker"
-                  className="userUpdateInput"
-                />
-              </div>
-              <div className="userUpdateItem">
-                <label>Email</label>
-                <input
-                  type="text"
-                  placeholder="annabeck99@gmail.com"
-                  className="userUpdateInput"
-                />
-              </div>
-              <div className="userUpdateItem">
-                <label>Phone</label>
-                <input
-                  type="text"
-                  placeholder="+1 123 456 67"
-                  className="userUpdateInput"
-                />
-              </div>
-              <div className="userUpdateItem">
-                <label>Address</label>
-                <input
-                  type="text"
-                  placeholder="New York | USA"
-                  className="userUpdateInput"
-                />
-              </div>
-            </div>
-            <div className="userUpdateRight">
-              <div className="userUpdateUpload">
-                <img
-                  className="userUpdateImg"
-                  src="https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                  alt=""
-                />
-                <label htmlFor="file">
-                  {/* <Publish className="userUpdateIcon" /> */}
-                </label>
-                <input type="file" id="file" style={{ display: "none" }} />
-              </div>
-              <button className="userUpdateButton">Update</button>
-            </div>
-          </form>
-        </div>
-      </div>
     </div>
   );
 }
