@@ -12,18 +12,19 @@ import { useParams } from 'react-router-dom';
 
 const Profile = () => {
     const {id} = useParams();
+    const profile=JSON.parse(localStorage.getItem('profile'))
   return (
     <div>
         <div className='contt' id='prof'>
                 <div className='id'>
-                    <p>{userRows.id}</p>
+                    <p>{profile.id}</p>
                 </div>
                 <div className='userimg'>
                 <img src='https://static.vecteezy.com/system/resources/previews/002/400/532/original/young-happy-businessman-character-avatar-wearing-business-outfit-isolated-free-vector.jpg' />
                 </div>
                 <div className='info'>
                     <div className='name'>
-                        <p>Hadjer Aroua FERRAR</p>
+                        <p>{profile.username}</p>
                     </div>
                     <div className='promo'>
                         <p>1CS student</p>

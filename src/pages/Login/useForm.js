@@ -27,20 +27,28 @@ const useForm = (callback, validate) => {
       email: values.email,
       password: values.password,
     }
-    const {data} = await axios.post('http://localhost:8080/api/auth/signin',LoginUser);
+    const {data} = await axios.post('http://localhost:8080/api/auth/login',LoginUser);
     console.log(data);
     console.log("success")
   
       setErrors(validate(values,false,false));
       console.log(data);
+      const id = data.id;
       const firstname = data.FirstName;
       const lastname = data.LastName;
       const username = data.username;
       const email = data.email;
       const role = data.role;
       const sexe = data.sexe;
-      const id = data.id;
-      localStorage.setItem('user',JSON.stringify({firstname:data.FirstName, lastname:data.LastName,username:data.username,email:data.email,role:data.role,sexe:data.sexe,id:data.id}));
+      
+      // const date_de_naissance = data.date_de_naissance;
+      // const lieu_de_naissance= data.lieu_de_naissance;
+      // const phoneNumber = data.phoneNumber;
+     
+      localStorage.setItem('user',JSON.stringify({id:data.id,firstname:data.FirstName,lastname:data.LastName,username:data.username,email:data.email,role:data.role,
+        sexe:data.sexe,Adresse:data.Adresse
+        // ,date_de_naissance:data.date_de_naissance,lieu_de_naissance:data.lieu_de_naissance,phoneNumber:data.phoneNumber
+      }));
      setErrors(validate(values));
      setIsSubmitting(true);
      navigate('/'+data.role);

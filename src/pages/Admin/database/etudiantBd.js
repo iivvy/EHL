@@ -8,8 +8,10 @@ import {TiArrowUnsorted} from 'react-icons/ti';
 import Navbardb from "../../../components/DBNavBar";
 import Home from "../../Base/Home";
 
-import Profile from "../../../components/sideProfile/test";
+import Profile from "../../../components/sideProfile/ProfileStudent";
 import StudentTable from "../../../components/datatable/StudentTable";
+import GetStudent from "../users/student/getstudent";
+import Prof from "../../../components/sideProfile/prof";
 
 const Etudiant = () => {
   return (
@@ -22,23 +24,23 @@ const Etudiant = () => {
          <hr /> */}
          <div className="dbtitle">
            <h2>Base de Donnée</h2>
-           <div className="buttons">
+           {/* <div className="buttons">
            <div className="FilterButton">
                <FiFilter style={{color :'#9F9999'}}/>Filtrer</div>
                <div className="empty"></div>
            <div className="sortButton">
                <TiArrowUnsorted/>Trier</div>
-           </div>
+           </div> */}
          
          </div>
-         <Profile />
+         {/* <Profile /> */}
          <div className="dbnavigation ">
              <Navbardb/>
          </div>
 
         
          
-          <StudentTable/>
+          <GetStudent/>
      
       </div>
      

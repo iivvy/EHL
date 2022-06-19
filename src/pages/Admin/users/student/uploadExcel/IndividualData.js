@@ -3,8 +3,8 @@ import React from 'react'
 export const IndividualData = ({individualExcelData}) => {
     return (
         <>
-            <th>{individualExcelData.Nom}</th>
-            <th>{individualExcelData.Prénom}</th>
+            <th>{individualExcelData.FirstName}</th>
+            <th>{individualExcelData.LastName}</th>
             <th>{individualExcelData.email}</th>
             <th>{individualExcelData.Genre}</th> 
             <th>{individualExcelData.DateDeNaissance}</th>

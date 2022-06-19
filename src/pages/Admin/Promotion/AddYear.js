@@ -8,6 +8,7 @@ import Slide from '@mui/material/Slide';
 import { TextField } from '@mui/material';
 import { useState } from 'react';
 import { BsPlusLg } from 'react-icons/bs';
+import axios from 'axios';
 
 
 
@@ -27,6 +28,12 @@ export default function AddYear() {
   const handleClose = () => {
     setOpen(false);
   };
+  const ajouteryear =()=>{
+    axios.post(``,{Nom})
+    .then(()=>{
+      alert("Opération réussite")
+    })
+  }
 
   return (
     <div>

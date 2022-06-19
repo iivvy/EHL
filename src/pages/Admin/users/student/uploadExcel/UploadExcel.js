@@ -2,7 +2,7 @@ import {useState} from 'react'
 import {Data} from './Data'
 import * as XLSX from 'xlsx'
 import axios from 'axios';
-import './upload.css'
+import './uploading.css'
 import Home from '../../../../Base/Home';
 function UploadStudent() {
   
@@ -55,8 +55,8 @@ function UploadStudent() {
   const UploadExcel =()=>{
     axios.post(`http://localhost:8080/api/Etudiant/ajouteretudautomatique`,excelData)
     .then(()=>{
-      console.log('success');
-    })
+      alert("success"); 
+  });
         
   }
 
@@ -73,12 +73,13 @@ function UploadStudent() {
         onSubmit={handleSubmit}>
           <label><h5 style={{color:'black',fontFamily:"Poppins",fontSize:"18px"}}>Ajouter votre fichier excel ici </h5></label>
           <br></br>
-          <input type='file' className='form-control' style={{border:"0.3px solid #195e9a",borderRadius:"5px",width:"850px"}}
-          onChange={handleFile} required></input>                  
+          <button type='submit' className='btn-success'
+          style={{cursor:"pointer" }} onClick={UploadExcel}>Submit</button>
+          <div className='input'><input type='file' className='form-control' style={{border:"0.3px solid #195e9a",borderRadius:"5px",width:"850px"}}
+          onChange={handleFile} required ></input>  </div>                
           {excelFileError&&<div className='text-danger'
           style={{marginTop:'0px'}}>{excelFileError}</div>}
-          <button type='submit' className='btn-success'
-          style={{marginTop:'0px' }} onClick={UploadExcel}>Submit</button>
+        
         </form>
       </div>
 
@@ -91,17 +92,17 @@ function UploadStudent() {
         {excelData===null&&<>No file selected</>}
         {excelData!==null&&(
           <div className='table-responsive'>
-            <table style={{width:"1200px"}} className='table'>
+            <table style={{marginLeft:"00px"}} className='table'>
               <thead>
                 <tr>
-                  <th  scope='col'>Nom</th>
-                  <th scope='col'>Prénom</th>
+                  <th  scope='col'>FirstName</th>
+                  <th scope='col'>LastName</th>
                   <th scope='col'>email</th>
                   <th style={{width:"80px"}}  scope='col'>Genre</th>
                   <th scope='col'>DateDeNaissance</th>
                   <th scope='col'>Adresse</th>
                   <th scope='col'>Numéro telephone</th>
-                  <th scope='col'>Numéro inscription</th>
+                  <th scope='col'>Numéro_inscription</th>
                   <th scope='col'>Année universitaire</th>
                   <th style={{width:"60px"}} scope='col'>Promo</th>
                   <th style={{width:"60px"}} scope='col'>Groupe</th>

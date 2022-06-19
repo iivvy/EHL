@@ -14,7 +14,7 @@ const TeacherTable = () => {
   const [selectionModel, setSelectionModel] = useState([]);
   const [Teachers,setTeachers]= React.useState([]);
   const [importModalOpened, setImportModalOpened] = useState(false);
-	const [deleteModalOpened, setDeleteModalOpened] = useState(false);
+  const [deleteModalOpened, setDeleteModalOpened] = useState(false);
   const [clickedTeacher, setClickedTeacher] = useState();
   const navigate = useNavigate();
   useEffect(() => {

@@ -10,20 +10,25 @@ import {MdLogout} from 'react-icons/md'
 import {GiBookshelf} from 'react-icons/gi'
 
 const SideBarEnseignant = () => {
+  const user = JSON.parse(localStorage.getItem("user"));
+  const logout = () => {
+    window.open('/','_self')
+  }
+
   return (
    
     <div className='sidenav'>
      <div className='avatar'>
       <img src={avatar} alt='avatar' className='avatar' />
       <div className='user-info'>
-        <h5>Hadjer</h5>
-        <p>Administrateur</p>
+        <h5>{user.username}</h5>
+        <p>{user.role}</p>
       </div>
       </div>
      
      <ul>
           <li>
-              <a href='/'> <GiBookshelf style={{}}/>Mes Cours</a>
+              <a href='/Enseignant/Document'> <GiBookshelf style={{}}/> Documents</a>
           </li>
       </ul> 
       <ul>
@@ -37,7 +42,7 @@ const SideBarEnseignant = () => {
       </ul> 
       <ul>
           <li>
-              <a href='/'><AiOutlineSchedule style={{color: 'white'}}/>Evaluation</a>
+              <a href='/Enseignant/Evaluation'><AiOutlineSchedule style={{color: 'white'}}/>Evaluation</a>
           </li>
       </ul> 
       <ul>
@@ -46,7 +51,11 @@ const SideBarEnseignant = () => {
           </li>
       </ul> 
      
-      <MdLogout/></div>
+      <button style={{border:"none",width:"70px",height:"40px",borderRadius:"10px",backgroundColor:"white",marginLeft:"50px"}}>
+         <MdLogout onClick={logout} 
+        style={{color:"#0A1F31",width:"30px",height:"20px"}}/>
+         </button>
+      </div>
   )
 }
 

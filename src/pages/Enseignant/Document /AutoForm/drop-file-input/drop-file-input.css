@@ -1,16 +1,18 @@
 .drop-file-input {
     position: relative;
     width: 400px;
-    height: 200px;
+    height: 130px;
     border: 2px dashed var(--border-color);
+    margin-left: 50px;
     border-radius: 20px;
+    
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     background-color: var(--input-bg);
-    margin-left: 130px;
+    
 }
 
 .drop-file-input input {

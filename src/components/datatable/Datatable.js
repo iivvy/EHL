@@ -2,6 +2,7 @@ import   './datatable.css';
 import React from 'react'
 import { DataGrid } from '@mui/x-data-grid';
 import { userColumns,userRows } from '../../datatablesource';
+import { teacherColumns } from './TeacherData';
 
 const Datatable = ({data}) => {
 
@@ -30,8 +31,8 @@ const Datatable = ({data}) => {
 
       
        
-        rows={userRows}
-        columns={userColumns.concat(actionColumn) } 
+        rows
+        columns={teacherColumns.concat(actionColumn) } 
         
         pageSize={15}
         rowsPerPageOptions={[15,30,50]}

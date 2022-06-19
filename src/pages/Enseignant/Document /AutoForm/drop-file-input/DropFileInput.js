@@ -5,6 +5,7 @@ import { ImageConfig } from '../config/ImageConfig';
 import uploadImg from '../assets/cloud-upload-regular-240.png';
 import { useRef } from 'react';
 import { useState } from 'react';
+import axios from 'axios';
 
 const DropFileInput = props => {
     const wrapperRef = useRef(null);
@@ -32,6 +33,11 @@ const DropFileInput = props => {
         setFileList(updatedList);
         props.onFileChange(updatedList);
     }
+    const Deposer =()=>{
+        axios.post(``,{
+            
+        })
+    }
 
 
   return (
@@ -45,7 +51,7 @@ const DropFileInput = props => {
     >
         <div className="drop-file-input__label">
             <img src={uploadImg} alt="" />
-            <p>Drag & Drop your files here</p>
+            <p></p>
         </div>
         <input type="file" value="" onChange={onFileDrop}/>
     </div>

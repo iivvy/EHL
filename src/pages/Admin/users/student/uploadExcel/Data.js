@@ -3,7 +3,7 @@ import { IndividualData } from './IndividualData'
 
 export const Data = ({excelData}) => {
     return excelData.map((individualExcelData)=>(
-        <tr key={individualExcelData.Id}>
+        <tr key={individualExcelData.FirstName}>
             <IndividualData individualExcelData={individualExcelData}/>
         </tr>        
     ))

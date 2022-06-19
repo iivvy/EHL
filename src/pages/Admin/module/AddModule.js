@@ -1,25 +1,48 @@
+import axios from 'axios'
 import React from 'react'
 import { useState } from 'react'
 import Select from 'react-select'
+import Home from '../../Base/Home'
 import './AddModule.css'
 
-const options = [
-  { value: 'chocolate', label: 'Chocolate' },
-  { value: 'strawberry', label: 'Strawberry' },
-  { value: 'vanilla', label: 'Vanilla' }
-]
+
 
 
 const AddModule = () => {
-    const[Nom,setNom] = useState("");
-    const[Prof,setProf] = useState("");
-    const[VolumeHoraire,setVolumeHoraire] = useState("");
-    const[ProfTD,setProfTD] = useState(""); 
-    const[ProfTP,setProfTP] = useState("");
-    const[Description,setDescription] = useState("");
-    const[Image,setImage] = useState("");
+    const[nomModule,setNomModule] = useState("");
+    const[VolumeCour,setVolumeCour] = useState("");
+    const [VolumeTD,setVolumeTD] =useState("");
+    const [VolumeTP,setVolumeTP] =useState("");
+    const[promoID,setPromoID] = useState("");
+    const[Semestre,setSemestre] =useState("")
+
+
+    const ajoutermodule=()=>{
+      console.log(nomModule);
+      console.log("volume cours",VolumeCour)
+      axios.post(`http://localhost:8080/GestionDesSalles/ajouterModule`,{
+        nomModule:nomModule,
+        VolumeCour:VolumeCour,
+        VolumeTD:VolumeTD,
+        VolumeTP:VolumeTP,
+        PromoID:"3",
+        Semestre:Semestre
+        
+
+      
+      }).catch(err=>{
+        console.log(err.response.data)
+      })
+      // .catch (error) {
+      //   console.error(error.response.data);     // NOTE - use "error.response.data` (not "error")
+      // }
+    }
+    
   return (
+    <div>
+      <Home/>
     <div className='AddModule'>
+    
         <div className='header'>
             <h3>Ajouter module</h3>
         </div>
@@ -27,56 +50,32 @@ const AddModule = () => {
             <input type='text' 
             className='title-input'
             placeholder='  Ecrivez le titre de votre module ici...' 
-            onChange={(event) => {setNom(event.target.value);}}>
+            onChange={(event) => {setNomModule(event.target.value);}}>
             </input>
         </div>
-        <div className='enseignant'>
-            <div className='ProfCours'>
-                <label>Chargé cours:</label>
-                <select className='ProfCours' id="cars" defaultValue={[]} onChange={(event) => {setProf(event.target.value);}} >
-                  <option value="default"></option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-                </select>
-            </div>
-            <div className='ProfTd'>
-            <label>Chargé TD:</label>
-            <Select
-            onChange={(event) => {setProfTD(event.target.value);}}
-            defaultValue={[]} 
-            isMulti 
-            name="colors"
-            options={options}
-            className="basic-multi-select"
-            classNamePrefix="select"/>
-            </div>
-            <div className='ProfTp'>
-            <label>Chargé TP:</label>
-            <Select
-            onChange={(event) => {setProfTP(event.target.value);}}
-            styles={{backgroundColor: '#f9f9f9'}}
-            defaultValue={[]} 
-            isMulti 
-            name="colors"
-            options={options}
-            className="basic-multi-select"
-            classNamePrefix="select"/>
-            </div>
-
+        <div className='VolumeCour'>
+            <label>Volume Cours</label>
+            <input onChange={(event) => {setVolumeCour(event.target.value);}} type='text'  placeholder='00:00:00'/>
         </div>
-        <div className='VolumeHoraire'>
-            <label>Volume horaire</label>
-            <input onChange={(event) => {setVolumeHoraire(event.target.value);}} type='number' placeholder='Volume Horaire'/>
+        <div className='VolumeTD'>
+            <label>Volume TD</label>
+            <input onChange={(event) => {setVolumeTD(event.target.value);}} type='text'  placeholder='Volume TD'/>
         </div>
-        <div className='Description'>
-            <label>Description</label>
-            <textarea 
-            onChange={(event) => {setDescription(event.target.value);}}
-            className='description'
-            placeholder='Ecrivez la description de votre module ici...'></textarea>
+        <div className='VolumeTP'>
+            <label>Volume TP</label>
+            <input onChange={(event) => {setVolumeTP(event.target.value);}} type='text'  placeholder='Volume TP'/>
         </div>
-
+        {/* <div className='promo'>
+          <label>promo</label>
+          <input onChange={(event) => {setPromoID(event.target.value);}}></input>
+        </div> */}
+        <div className='Semestre'>
+            <label>Semestre</label>
+            <input onChange={(event) => {setSemestre(event.target.value);}}></input>
+        </div>
+        <button onClick={ajoutermodule}>Ajouter module</button>
+        
+        </div>
     </div>
   )
 }

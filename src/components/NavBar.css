@@ -35,12 +35,13 @@
     
   }
   .avatar .user-info h5{
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 0px;
     font-size: 18px;
   }
-  .avatar .user-info p {
-    margin-left: 20px;
+ .user-info p {
+    margin-left: 35px;
+    margin-top: -20px;
     color: rgba(255, 255, 255, .38);
   }
   ul{

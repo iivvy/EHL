@@ -10,14 +10,27 @@ import {MdLogout} from 'react-icons/md'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Testname from './Testname';
+import {BiNews} from 'react-icons/bi'
 import { render } from '@testing-library/react';
 
 
 
 const NavBar = () => {
+  const [ListPromoEmploi,setListPromoEmploi]=useState([])
   const user = JSON.parse(localStorage.getItem("user"));
+  const logout = () => {
+    window.open('/','_self')
+  }
 
   
+  const PromolistEmploi=()=>{
+    axios.post(`http://localhost:8080/GestionDesAnnes/getPromos`,{
+      AnneeNom:"2021/2022",
+    })
+    .then((response)=>{
+      setListPromoEmploi(response.data)
+      localStorage.setItem("ListPromoEmploi",JSON.stringify(response.data))})
+  }
   
 
 
@@ -29,11 +42,19 @@ const NavBar = () => {
         <img src={avatar} alt='avatar' className='avatar' />
         <div className='user-info'>
         
-          <h5 >{user.username}</h5>
+          <h5 >{user.lastname}</h5>
           
           <p>{user.role}</p>
         </div>
         </div>
+        <ul>
+        
+        <li>
+
+          <a href='/admin/StudentDB'><HiOutlineDatabase style={{color: 'white'}}/> Effectif</a>
+        </li>
+       
+    </ul> 
        
        <ul>
             <li>
@@ -41,31 +62,29 @@ const NavBar = () => {
             </li>
         </ul> 
         
-        <ul>
-        
-            <li>
-   
-              <a href='/admin/StudentDB'><HiOutlineDatabase style={{color: 'white'}}/> Base de Donnée</a>
-            </li>
-           
-        </ul> 
+      
         
         <ul>
             <li>
-                <a href='/admin/TimeTable'><AiOutlineSchedule style={{color: 'white'}}/>Emploi du Temps</a>
+                <a onClick={PromolistEmploi} href='/admin/TimeTable'><AiOutlineSchedule style={{color: 'white'}}/>Emploi du Temps</a>
             </li>
         </ul> 
         <ul>
             <li>
-                <a href='/admin/Chat'> <BsChatDots style={{color: 'white'}} />Messagerie</a>
+                <a href='/admin/Events'> <BiNews style={{color: 'white'}} />Evènements</a>
             </li>
         </ul> 
         <ul>
             <li>
-                <a href='/evaluation'> <VscNotebook style={{color: 'white'}} />Evaluation</a>
+                <a href='/admin/deliberation'> <VscNotebook style={{color: 'white'}} />Déliberation</a>
             </li>
+            
         </ul> 
-        <MdLogout/>
+       
+         <button style={{border:"none",width:"70px",height:"40px",borderRadius:"10px",backgroundColor:"white",marginLeft:"50px"}}>
+         <MdLogout onClick={logout} 
+        style={{color:"#0A1F31",width:"30px",height:"20px"}}/>
+         </button>
     </div>
   )
 }

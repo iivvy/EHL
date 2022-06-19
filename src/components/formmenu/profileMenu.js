@@ -22,6 +22,9 @@ export default function MenuListComposition() {
   const logout =()=> {
     window.open('/','_self')
   }
+  const profile = ()=>{
+    window.open('/profileEns','_self')
+  }
 
   const handleClose = (event) => {
     if (anchorRef.current && anchorRef.current.contains(event.target)) {
@@ -104,7 +107,7 @@ export default function MenuListComposition() {
                     aria-labelledby="composition-button"
                     onKeyDown={handleListKeyDown}
                   >
-                    <MenuItem  onClick={handleClose}>Profile</MenuItem>
+                    <MenuItem  onClick={profile}>Profile</MenuItem>
                     <MenuItem onClick={handleClose}>Settings</MenuItem>
                     <MenuItem onClick={logout} >Logout</MenuItem>
                   </MenuList>

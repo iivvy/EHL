@@ -1,0 +1,35 @@
+/* use the poppins font*/ 
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #E5E5E5;
+    width: fit-content;
+    block-size: fit-content;
+  }
+  
+  .homeContainer{
+     display: inline-block; 
+    
+     flex: 2;
+    
+     height: 100px;
+     
+  
+     
+  
+    
+  }
+  hr{
+    height:0;
+    border: 0.5px solid lightgray;
+    width :1050px;
+    margin-left: 280px;
+  
+  }
+  .home{
+    
+    height: 100%;
+   
+  }
+  

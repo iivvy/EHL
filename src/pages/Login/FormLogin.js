@@ -156,6 +156,7 @@ import validate from './validateInfo';
 import useForm from './useForm';
 import './Form.css';
 import Home from '../Base/Home';
+import axios from 'axios';
 
 
 const FormLogin = ({ submitForm }) => {
@@ -163,7 +164,14 @@ const FormLogin = ({ submitForm }) => {
     submitForm,
     validate
   );
-  
+  const forget =()=>{
+    localStorage.setItem ('emailfp',JSON.stringify({email:values.email}))
+    axios.post(`http://localhost:8080/api/auth/forgetPass`,{
+      email:values.email,
+    })
+
+  }
+ 
 
   return (
     <div>
@@ -208,7 +216,7 @@ const FormLogin = ({ submitForm }) => {
           Login
         </button>
         <span className='form-input-login'>
-          <a href='https://fr.wikipedia.org/wiki/VV'>Mot de passe oublié ?</a>
+          <a onClick={forget} href='/mpasse'>Mot de passe oublié ?</a>
         
         </span>
       </form>

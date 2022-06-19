@@ -55,11 +55,12 @@ import { TextField } from '@mui/material';
 import {MenuItem} from '@mui/material';
 import { useState } from 'react';
 import './AddSalle.css';
+import axios from 'axios';
 
 const typesalle = [
   {
-    value: 'Amphi',
-    label: 'Amphi',
+    value: 'Cours',
+    label: 'Cours',
   },
   {
     value: 'TD',
@@ -77,7 +78,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 export default function AddSalle() {
   const [Type,setType]=useState('');
   const [Capacité,setCapacité]=useState(0);
-  const [Nom,setNom]=useState('');
+  const [SalleNom,setSalleNom]=useState('');
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -87,6 +88,17 @@ export default function AddSalle() {
   const handleClose = () => {
     setOpen(false);
   };
+  const ajouterSalle=()=>{
+    console.log(SalleNom);
+    axios.post(`http://localhost:8080/GestionDesModules/ajouterSalle`,{
+      SalleNom:SalleNom,
+      Type:Type,
+      Capacité:Capacité
+    }).then((res)=>{
+      alert("Salle ajoutée avec succès");
+
+    })
+  }
 
   return (
     <div>
@@ -104,7 +116,7 @@ export default function AddSalle() {
         <DialogTitle>{"Ajouter une salle"}</DialogTitle>
         <DialogContent >
             <div className='field'>
-            <TextField  onChange={(event) => {setNom(event.target.value);}} style={{width:"300px"}} label="Nom" type='text' variant="standard"></TextField>
+            <TextField  onChange={(event) => {setSalleNom(event.target.value);}} style={{width:"300px"}} label="Nom" type='text' variant="standard"></TextField>
             </div>
        
           
@@ -125,7 +137,7 @@ export default function AddSalle() {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Annuler</Button>
-          <Button onClick={handleClose}>Ajouter</Button>
+          <Button onClick={ajouterSalle}>Ajouter</Button>
         </DialogActions>
       </Dialog>
      

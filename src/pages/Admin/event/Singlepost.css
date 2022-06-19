@@ -1,24 +1,45 @@
 .singlePost {
-    flex: 9;
+    flex: 2;
+    margin-left: 260px;
+  
   }
   
   .singlePostWrapper {
     padding: 20px;
     padding-right: 0;
+    
   }
+  .Postslink{
+    margin-left: 10px;
+    font-size: 14px;
+
+
+  }
+.Postslink a{
+  text-decoration: none;
+  margin-left: 5px;
+  color: #666;
+
+}
   
   .singlePostImg {
-    width: 100%;
+    width: 95%;
     height: 300px;
     border-radius: 5px;
     object-fit: cover;
+    margin-bottom: 50px;
+    margin-top: 40px;
   }
+.posttime{
+  color: rgb(1, 51, 122);
+}
   
   .singlePostTitle {
-    text-align: center;
-    margin: 10px;
+ 
+    margin: 0px;
     font-size: 28px;
     font-family: "Lora", sans-serif;
+    color: black;
   }
   
   .singlePostEdit {
@@ -38,21 +59,25 @@
     color: tomato;
   }
   
-  .singlePostInfo {
-    margin-bottom: 20px;
+  .singlePostInfo{
+    margin-bottom: 0px;
     display: flex;
     justify-content: space-between;
-    font-size: 16px;
-    color: #be9656;
+    font-size: 18px;
+    color: #042a7d;
     font-family: "Varela Round", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: -12px;
   }
   
-  .singlePostAuthor{
+.singlePostAuthor{
     margin-left: 5px;
+    margin-top: -10px;
+    
   }
   
   .singlePostDesc {
-    color: #666;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     line-height: 25px;
   }

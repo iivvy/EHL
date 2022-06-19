@@ -3,33 +3,25 @@ import { useParams } from 'react-router-dom';
 import { userRows } from '../../datatablesource';
 import {AiOutlineMail} from 'react-icons/ai';
 import {BsChatDots} from 'react-icons/bs';
+import './prof.css'
 
-const Prof= () => {
-    const {id} = useParams();
-    // const [user,setUser] = useState([]);
-    // useEffect(()=>{
-    //     const getUser = async()=>{
-    //         const response = await fetch(`http://localhost:5000/api/Database/${id}`);
-    //         const data = await response.json();
-    //         setUser(data);
-    //     }
-    //     getUser();
-    // },[]);
-    const showprofile =()=>{
+const Prof= ({id,img,username,name,promotion,adresse,datedenaissance,groupe,sexe}) => {
+    
+   
         return(
             <div className='contt'>
                 <div className='id'>
-                    {userRows.id}
+                   id {id}
                 </div>
                 <div className='userimg'>
-                <img src={userRows.img} alt={userRows.name}/>
+                <img src={img} alt={username}/>
                 </div>
                 <div className='info'>
                     <div className='name'>
-                        {userRows.name}
+                       user {username}
                     </div>
                     <div className='promo'>
-                        <p>{userRows.class} student</p>
+                        <p>{promotion} student</p>
                     </div>
                     <div className='contact'>
                         <div className='message'>
@@ -39,23 +31,21 @@ const Prof= () => {
                             <AiOutlineMail/>
                         </div>
                     </div>
-                    <div className='desc'>
-                        <p>description</p>
-                    </div>
+                    
                     <div className='lieu'>
-                        <p>lieu Naissance</p>
+                        <p>{adresse}</p>
                     </div>
                     <div className='date'>
-                        <p>date Naissance</p>
+                        <p>{datedenaissance}</p>
                     </div>
                     <div className='groupe'>
-                        <p>groupe</p>
+                        <p>{groupe}</p>
                     </div>
                     <div className='sexe'>
-                        <p>sexe</p>
+                        <p>{sexe}</p>
                     </div>
                     <div className='adresse'>
-                        <p>adresse</p>
+                        <p>{}</p>
                     </div>
                     
                 </div>
@@ -64,17 +54,9 @@ const Prof= () => {
             </div>
         )
 
-    }
-        
-  return (
-    <div>
-        <div className='profileContainer'>
-
-        </div>
-
-
-    </div>
-  )
+    
+   
+  
 }
 
 export default Prof;

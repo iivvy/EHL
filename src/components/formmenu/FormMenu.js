@@ -20,6 +20,10 @@ export default function MenuPopupState() {
     var url = "/admin/StudentDB/newMan";
     window.open(url);
   };
+  const redirect4 = () => {
+    var url = "/admin/TeacherDB/newAuto";
+    window.open(url);
+  };
   return (
     <PopupState variant="popover" popupId="demo-popup-menu">
       {(popupState) => (
@@ -37,6 +41,7 @@ export default function MenuPopupState() {
           </IconButton>
           <Menu {...bindMenu(popupState)}>
             <MenuItem onClick={redirect}>Ajouter Enseignant manuellement</MenuItem>
+            <MenuItem onClick={redirect4}>Ajouter Enseignant automatiquement</MenuItem>
             <MenuItem onClick={redirect2}>Ajouter etudiant automatiquement</MenuItem>
             <MenuItem onClick={redirect3}>Ajouter etudiant manuellement</MenuItem>
           </Menu>

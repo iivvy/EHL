@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import validate from './validateInfomp';
 import useFormmp from './useFormmp';
 import './Mpasse.css';
+import axios from 'axios';
 
 
 const Mpassef= ({ submitForm }) => {
@@ -9,6 +10,8 @@ const Mpassef= ({ submitForm }) => {
     submitForm,
     validate
   );
+  
+
 
   return (
     <div className='form-content-right'>
@@ -28,7 +31,7 @@ const Mpassef= ({ submitForm }) => {
             type='text'
             name='code'
             placeholder='Entrez le code que vous avez reçu '
-            value={values.Code}
+            value={values.code}
             onChange={handleChange}
           />
           {errors.code && <p>{errors.code}</p>}

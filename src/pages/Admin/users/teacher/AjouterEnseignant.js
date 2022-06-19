@@ -27,7 +27,9 @@ function AjouterEnseignant (){
             Numéro_telephone,
             Grade,
             Etat_civil
-        })
+        }).then(()=>{
+            alert("success"); 
+        });
     };
     return(
         <div>

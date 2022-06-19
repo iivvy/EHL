@@ -36,9 +36,10 @@
     padding: 30px;
     border-radius: 20px;
     box-shadow: var(--box-shadow);
-    width: 700px;
-    margin-left: 500px; 
-    margin-top: 70px;
+    width: 500px;
+    height: 180px;
+    margin-left: 50px; 
+    margin-top: 10px;
     
 
   
@@ -47,6 +48,6 @@
 
 .header {
     margin-bottom: 30px;
-    margin-left: 160px;
+    margin-left: 70px;
 
 }

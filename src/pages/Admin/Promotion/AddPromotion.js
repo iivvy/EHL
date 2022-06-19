@@ -7,6 +7,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import { TextField } from '@mui/material';
 import { useState } from 'react';
+import axios from 'axios';
 
 
 
@@ -16,6 +17,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 export default function AddPromotion() {
   const [Nom,setNom]=useState('');
+  const [Annee,setAnnee]= useState('')
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -25,6 +27,13 @@ export default function AddPromotion() {
   const handleClose = () => {
     setOpen(false);
   };
+  const ajouterpromo=()=>{
+    axios.post(``,{Nom:Nom,AnneeNom:Annee})
+    .then(()=>{
+      alert("Opération réussite")
+
+  })
+  }
 
   return (
     <div>
@@ -51,7 +60,7 @@ export default function AddPromotion() {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Annuler</Button>
-          <Button onClick={handleClose}>Ajouter</Button>
+          <Button onClick={ajouterpromo}>Ajouter</Button>
         </DialogActions>
       </Dialog>
      

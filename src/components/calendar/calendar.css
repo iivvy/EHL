@@ -4,12 +4,11 @@
    display: flex;
 
    width: 700px;
-   height: 580px;
+   height: 650px;
    margin-left: 350px;
    color: black;
    font-family: 'Poppins', sans-serif;
    border-radius: 10px;
-   background-color: rgb(255, 255, 255);
    box-shadow: 5px 5px 5px 5px rgba(120, 120, 120, 0.2);
 }
 .event h1{
@@ -65,9 +64,9 @@
     margin-right: 40px;
     height: 40px;
     width: 100px;
-    background-color: #5283ad;
+    background-color: #0A1F31;
     border-radius: 7px;
-    border: 1px solid #5283ad;
+    border: 1px solid #0A1F31;
     color: white;
     font-size: 14px;
 }

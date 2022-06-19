@@ -8,7 +8,7 @@ const AutoForm = () => {
   return (
     <div className="box">
     <h2 className="header">
-        Drop your users file here
+        Importer le document ici :
     </h2>
     <DropFileInput
         onFileChange={(files) => onFileChange(files)}
